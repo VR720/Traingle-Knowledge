@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Triangle Quiz</title>
+
+    <link rel="stylesheet" href="styles/quiz.css" />
+  </head>
+
+  <body>
+    <nav>
+      <div class="nav-header">Fun With Triangles</div>
+
+      <a href="./isTriangle.html">is Triangle?</a>
+      <a href="./hypotenuse.html">Hypotenuse</a>
+      <a class="active" href="./index.html">Quiz</a>
+      <a href="./area.html">Area of Triangle</a>
+    </nav>
+
+    <h1>Quiz on triangle</h1>
+
+    <h4>---For each correct answer you will get 1 point---</h4>
+
+    <form id="quiz-form">
+      <div class="question-container">
+        <p>
+          1) What is the third angle for the triangle where angle1 = 45° and
+          angle2 = 45°?
+        </p>
+
+        <label> <input name="question1" type="radio" value="45°" /> 45° </label>
+        <label> <input name="question1" type="radio" value="60°" /> 60° </label>
+        <label> <input name="question1" type="radio" value="90°" /> 90° </label>
+      </div>
+
+      <div class="question-container">
+        <p>
+          2) A triangle should have ____ angle to call itself a right angled
+          triangle?
+        </p>
+
+        <label> <input name="question2" type="radio" value="50°" /> 50° </label>
+        <label> <input name="question2" type="radio" value="90°" /> 90° </label>
+        <label> <input name="question2" type="radio" value="40°" /> 40° </label>
+      </div>
+
+      <div class="question-container">
+        <p>
+          3) How many sides does a triangle have?
+        </p>
+
+        <label> <input name="question3" type="radio" value="0" /> 0 </label>
+        <label> <input name="question3" type="radio" value="2" /> 2 </label>
+        <label> <input name="question3" type="radio" value="3" /> 3 </label>
+      </div>
+
+      <div class="question-container">
+        <p>
+          4) Which of these is a property of an equilateral triangle?
+        </p>
+
+        <label>
+          <input name="question4" type="radio" value="one side is shorter" />
+          one side is shorter
+        </label>
+        <label>
+          <input name="question4" type="radio" value="one side is longer" /> one
+          side is longer
+        </label>
+        <label>
+          <input name="question4" type="radio" value="all sides are equal" />
+          all sides are equal
+        </label>
+      </div>
+
+      <div class="question-container">
+        <p>
+          5) How many angles are there in a triangle?
+        </p>
+
+        <label> <input name="question5" type="radio" value="2" /> 2 </label>
+        <label> <input name="question5" type="radio" value="3" /> 3 </label>
+        <label> <input name="question5" type="radio" value="1" /> 1 </label>
+      </div>
+    </form>
+
+    <button id="submit-button">SUBMIT</button>
+
+    <div id="output"></div>
+    <hr />
+
+    <script src="scripts/quiz-app.js"></script>
+  </body>
+</html>
